@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NYC Labs</title>
+<!-- JQuery -->
+<script src="http://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<!-- Font Awesome -->
+<script src="https://use.fontawesome.com/dedd89e558.js"></script>
+
+<!-- Animate CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+ <!-- WOW js -->
+ <script type="text/JavaScript" src="components/wow/wow.min.js"></script>
+ <script>
+    new WOW().init();
+ </script>
+
+ <!-- Parallax -->
+ <script type="text/JavaScript" src="components/parallax/parallax.min.js"></script>
+
+ <!-- Gallery -->
+<script type="text/javascript" src="components/photoswipe/dist/photoswipe.min.js"></script>
+<script type="text/javascript" src="components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+<link rel="stylesheet" href="components/photoswipe/dist/photoswipe.css">
+<link rel="stylesheet" href="components/photoswipe/dist/default-skin/default-skin.css">
+
+</head>
+
+<body>
+<div class="parallax-mirror hero" id="home-hero" data-parallax="scroll" data-image-src="assets/hero.jpg">
+<p class="logo">// NYC Labs</p>
+	<div class="col-md-6 col-md-offset-3 vertical-align">
+		<p class="hero-header wow fadeInUp">ready to take your project to the next level?</p>
+		<p class="hero-subheader wow fadeInUp">we've got just what you're looking for</p>
+		<div id="hero-btn-container">
+			<div class="col-xs-6 wow fadeInUp">
+				<a href="#contact-hero"><span class="btn btn-yellow" id="btn-hero-call">request a quote</span></a>
+			</div>
+			<div class="col-xs-6 wow fadeInUp">
+				<a href="#portfolio"><span class="btn btn-clear">portfolio</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col-xs-12" id="home-blurb">
+	<h6>WE PRIDE OURSELVES ON CUSTOMER SATISFACTION</h6>
+	<div class="col-md-6 col-md-offset-3">
+		<p id="home-blurb-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi augue, gravida sed tincidunt et, dapibus et orci. Aliquam sed vulputate eros, eu efficitur leo. Ut non dui eget neque ultricies varius vel at elit. Morbi purus diam, accumsan ut viverra id, venenatis ut augue.</p>
+	</div>
+</div>
+<div class="col-xs-12" id="contact-hero">
+	<div class="col-xs-6 vertical-align">
+		<p id="contact-header">got the next big idea?</p>
+		<p id="contact-subheader">we'd love to hear from you</p>		
+	</div>
+	<div class="col-xs-6 vertical-align">
+		<form method="post" action="http://up2code.austinserio.com/contact-script/" id="contact-form">
+            	<div class="validation-warning validation-warning-inverse"></div>
+                <div class="col-sm-6" id="name-field">
+                    <input type="text" placeholder="full name" name="firstName">
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" placeholder="phone number" name="phone">
+                </div>
+                <input type="hidden" name="location" value="">
+                <div class="col-md-4 col-xs-12 col-md-offset-4">
+                     <span class="submit-button submit-button-process" id="submit">submit</span>
+                </div>
+        </form>
+	</div>
+</div>
+<div class="col-xs-12" id="portfolio">
+	<h3>— portfolio —</h3>
+	<h6>lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+	<div class="col-md-10 col-md-offset-1" id="work-container">
+		<div class="col-sm-4 portfolio-work wow zoomIn" data-wow-duration=".4s" id="SweepBeat">
+			<div class="hover-film">
+				<div id="SweepBeat"></div>
+				<span class="btn-project-name vertical-align" id="SweepBeat-btn">SweepBeat</span>
+			</div>
+		</div>
+		<div class="col-sm-4 portfolio-work wow zoomIn" data-wow-delay=".35s" data-wow-duration=".4s" id="HubbMusic">
+			<div class="hover-film">
+				<span class="btn-project-name vertical-align" id="HubbMusic-btn">HubbMusic</span>
+			</div>
+		</div>
+		<div class="col-sm-4 portfolio-work wow zoomIn" data-wow-delay=".4s" data-wow-duration=".4s" id="rooted">
+			<div class="hover-film">
+				<span class="btn-project-name vertical-align" id="Rooted-btn">Rooted</span>
+			</div>
+		</div>
+		<div class="col-sm-4 portfolio-work wow zoomIn" data-wow-delay=".45s" data-wow-duration=".4s" id="chirp">
+			<div class="hover-film">
+				<span class="btn-project-name vertical-align" id="Chirp-btn">Chirp</span>
+			</div>
+		</div>
+		<div class="col-sm-4 portfolio-work wow zoomIn" data-wow-delay=".5s" data-wow-duration=".4s" id="LYNCZ">
+			<div class="hover-film">
+				<span class="btn-project-name vertical-align" id="Lycnz-btn">LYCNZ PL8Z</span>
+			</div>
+		</div>
+		<div class="col-sm-4 portfolio-work wow zoomIn" data-wow-delay=".55s" data-wow-duration=".4s" id="FixIt">
+			<div class="hover-film">
+				<span class="btn-project-name vertical-align" id="FixIt-btn">FixIt</span>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="social-media">
+	<p>
+    	<a href="https://www.facebook.com/Up2Codenyc"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    	<a href="mailto:hello@up2code-nyc.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
+    </p> 
+</div>
+<div class="footer col-xs-12">
+<p class="footer-info">
+	<span>NYC Labs | New York, NY</span>
+</p>
+</div>
+
+<!-- PhotoSwipe -->
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+        <script type="text/javascript" src="components/photoswipe/PhotoSwipe.js"></script>
+        <script>
+var form = document.getElementById("contact-form");
+var completed = true;
+$( "#submit" ).click(function( event ) {
+	if (form[0].value == "") {
+		completed = false;	
+	}
+	if (form[1].value == "") {
+		completed = false;	
+	}
+	if (completed == false) {
+		document.getElementById("validation-warning").innerHTML = "<p>please complete all fields before submitting your message</p>";	
+	}
+	else {
+		form[2].value = window.location.href;
+		completed = true;
+  		form.submit();
+	}
+});
+
+</script>
+
+
+</body>
+</html>
